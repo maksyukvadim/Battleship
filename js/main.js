@@ -23,6 +23,13 @@ var Battleships = function() {
 		}
 		return res;
 	}
+	this.CheckBorder = function (x, y) {
+		if (x > 0 && x < 10 && y > 0 && y < 10 ) {
+			return true;
+		} else{
+			return false;
+		}
+	}
 
 	this.putShip = function (x, y) {
 		// добавить проверку на край поля
@@ -38,4 +45,5 @@ var Battleships = function() {
 
 }
 
-var bg = new Battleships(10);	
+var bg = new Battleships(10);
+	
