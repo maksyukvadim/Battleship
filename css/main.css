@@ -1,0 +1,42 @@
+
+td{
+    width: 20px;
+    height: 20px;
+    border: 1px solid deepskyblue;
+    margin: 0px;
+}
+
+body {
+
+    width: 1024px;
+    margin:0 auto;
+
+}
+
+#header{
+    background-color: #80296b;
+    height: 200px;
+}
+#forTable{
+    background-color:black;
+
+
+
+}
+#footer{
+    background-color: aqua;
+    height:200px;
+}
+table:first-child{
+  display: inline-block;
+  margin-left: 15%;
+
+
+}
+table:last-child{
+display: inline-block;
+margin-left: 189px;
+}
+#btn{
+  margin-left: 45%; 
+}
