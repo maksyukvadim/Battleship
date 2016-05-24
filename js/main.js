@@ -56,7 +56,7 @@ window.onload = function() {
                     tr.appendChild(td);
 
                     td.id = i + ":" + j + count;
-                    td.style.background = "gray";
+                    td.style.background = "white";
                     // td.innerHTML = "" + i + ":" + j;
                 }
             }
@@ -560,14 +560,3 @@ window.onload = function() {
     var btn = document.querySelectorAll('#btn');
     btn[0].addEventListener('click', forBtn);
 };
-
-
-
-
-
-
-
-
-
-
-

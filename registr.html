@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/main.css"/>
+<script src="js/valid.js">
+
+</script>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <button type="button" id="no-btn1" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">Large modal</button>
+    <button type="button" id="no-btn2" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Large modal</button>
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" id="clos" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title text-center" id="gridSystemModalLabel"><strong>Войдите в систему</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form id="form" >
+                            <div class="form-group">
+                                <label for="login">Логин</label>
+                                <input type="login" class="form-control" id="login" placeholder="Логин"  >
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Пароль</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль" >
+                            </div>
+
+                            <button type="submit" class="btn btn-warning bb" id="reg"><strong>Регистрация</strong></button>
+                            <button type="submit" class="btn btn-success bb" id="log"><strong>Вход</strong></button>
+                        </form>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- Модальное окно -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Заголовок модального окна -->
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myModalLabel">Регистрация</h4>
+      </div>
+      <!-- Основная часть модального окна, содержащая форму для регистрации -->
+      <div class="modal-body">
+        <!-- Форма для регистрации -->
+  	<form role="form" class="form-horizontal">
+	  <!-- Блок для ввода логина -->
+	  <div class="form-group has-feedback">
+	    <label for="login" class="control-label col-xs-3">Логин:</label>
+	    <div class="col-xs-6">
+	      <div class="input-group">
+	        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	        <input type="text" class="form-control" required="required" name="login" pattern="[A-Za-z]{6,}">
+	      </div>
+	      <span class="glyphicon form-control-feedback"></span>
+	    </div>
+	  </div>
+	  <!-- Блок для ввода email -->
+	  <div class="form-group has-feedback">
+	    <label for="email" class="control-label col-xs-3">Email:</label>
+	    <div class="col-xs-6">
+	      <div class="input-group">
+	        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	        <input type="email" class="form-control" required="required" name="email">
+	      </div>
+	      <span class="glyphicon form-control-feedback"></span>
+	    </div>
+	  </div>
+    <div class="form-group has-feedback">
+	    <label for="login" class="control-label col-xs-3">Пароль:</label>
+	    <div class="col-xs-6">
+	      <div class="input-group">
+	        <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+	        <input type="password" class="form-control" required="required" name="login" pattern="[A-Za-z0-9]{6,}">
+	      </div>
+	      <span class="glyphicon form-control-feedback"></span>
+	    </div>
+	  </div>
+          <!-- Конец блока для ввода email-->
+        </form>
+      </div>
+      <!-- Нижняя часть модального окна -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+        <button id="save" type="button" class="btn btn-primary">Регистрация</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script>
+
+</script>
+<!--...-->
+
+
+
+
+    <script>
+
+    </script>
+    <script>
+    $('#no-btn1')[0].click();
+    $('#reg').click(function(event) {
+        event.preventDefault();
+        $('#clos').click();
+        $('#no-btn2')[0].click();
+    });
+</script>
+</body>
+
+</html>
